@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:ital,wght@0,400;1,500&display=swap');
+
+/*------------------------------------------------------------------------*/
+/* Global */
+
+
+/* Fonts */
+h1,h2,h3{
+    font-family: 'Lora', serif;
+    font-size: 64px;
+}
+h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------------------------------------------------------------------*/
+/* Homepage */
+
+/* navigation */
+.navbar {
+    border-bottom: 1px solid #AAAAAA;
+    background-color: white;
+    
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    color:#747474;
+
+}
+.nav-link:hover{
+    color: #000000;
+    border-bottom: 2px solid black;
+}
+.nav-link.active{
+    color:#000000;
+    font-weight: bold;
+}
+/* Spacing */
+.full-height {
+    height: 90vh;
+}
+
+.card {
+    --bs-card-spacer-y: 2.5rem;
+    background-color: #E3E8F4;
+    border: none;
+}
+.card:hover {
+    background-color: #ffc17e;
+}
+.color-box {
+    background-color: #0C40A3;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+.img-round {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: #d3dfd6;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
