@@ -65,6 +65,9 @@ $(document).ready(function() {
 
 });
 
+// ------------------------------------------------------------------------------
+// Trips Page
+
 function loadTrips () {
     for(let i = 0; i < tripsArray.length; i++){
         const trip = tripsArray[i];
@@ -81,8 +84,13 @@ function loadTrips () {
         $(currentChild).find("#dateText").text(trip.date);      
         $(currentChild).find("#codeText").text(trip.code);
         $(currentChild).find("#costText").text('R' + trip.cost + '.00');
-        
        
+        $(currentChild).find(".buy-btn").hide();
     }
-
 };
+
+
+// When card is clicked show button
+$("#tripContainer").on('click', '#trips', function(){
+    $(this).find(".buy-btn").toggle();
+})

@@ -7,7 +7,6 @@
 /* Fonts */
 h1,h2,h3{
     font-family: 'Lora', serif;
-    font-size: 64px;
 }
 h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +16,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /*------------------------------------------------------------------------*/
 /* Homepage */
 
@@ -24,34 +24,44 @@ p{
 .navbar {
     border-bottom: 1px solid #AAAAAA;
     background-color: white;
+    height: 10vh;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
-    color:#747474;
+    color:#0C40A3;
 
 }
 .nav-link:hover{
-    color: #000000;
-    border-bottom: 2px solid black;
+    color:#0C40A3;
+    font-weight: bold;
+    
 }
 .nav-link.active{
-    color:#000000;
+    color:#FFA86A;
     font-weight: bold;
+    border: 2px solid #FFA86A;
+    border-radius: 8px;
 }
-/* Spacing */
+
+/* Homepage Carousel */
+.carousel-caption {
+    top: 2rem;
+}
+/* Carousel Spacing */
 .full-height {
     height: 90vh;
 }
 
-.card {
+/* Card Template */
+#trips {
     --bs-card-spacer-y: 2.5rem;
     background-color: #E3E8F4;
     border: none;
 }
-.card:hover {
-    background-color: #ffc17e;
+#trips:hover {
+    background-color: #FFA86A;
 }
 .color-box {
     background-color: #0C40A3;
@@ -64,7 +74,37 @@ p{
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    background-color: #d3dfd6;
+
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/* Accordion */
+.accordion {
+    width: 60%;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #0C40A3;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 255, 255)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* Weather */
+#weather {
+    border: none;
+}
+.buy-btn{
+    width:150px;
+    height: 50px;
+    border-radius: 5px;
+    background: #C4D3F0;
+    border: none;
+    margin-top: 20px;
+    
+}
+footer{
+    height: 100px;
+    margin-top: 100px;
+    border-top: 1px solid #AAAAAA;
+    padding-top: 25px;
 }
