@@ -3,23 +3,6 @@
 /*------------------------------------------------------------------------*/
 /* Global */
 
-
-/* Fonts */
-h1,h2,h3{
-    font-family: 'Lora', serif;
-}
-h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-}
-p{
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/*------------------------------------------------------------------------*/
-/* Homepage */
-
 /* navigation */
 .navbar {
     border-bottom: 1px solid #AAAAAA;
@@ -45,7 +28,46 @@ p{
     border-radius: 8px;
 }
 
-/* Homepage Carousel */
+/* Footer */
+footer{
+    height: 100px;
+    margin-top: 100px;
+    border-top: 1px solid #AAAAAA;
+    padding-top: 25px;
+}
+
+/* Fonts */
+h1,h2,h3{
+    font-family: 'Lora', serif;
+}
+h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* button 1*/
+.buy-btn{
+    width:150px;
+    height: 50px;
+    border-radius: 8px;
+    border:4px solid #C4D3F0;
+    margin-top: 20px;
+    background-color: #C4D3F0;
+    color: black;
+}
+
+.buy-btn:hover {
+    font-weight: bold;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+}
+
+/*------------------------------------------------------------------------*/
+/* Homepage */
+
+/*  Carousel */
 .carousel-caption {
     top: 2rem;
 }
@@ -53,6 +75,25 @@ p{
 .full-height {
     height: 90vh;
 }
+
+/* Accordion */
+.accordion {
+    width: 60%;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #0C40A3;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 255, 255)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Weather */
+#weather {
+    border: none;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Trips Page */
 
 /* Card Template */
 #trips {
@@ -79,32 +120,28 @@ p{
     margin-bottom: 5px;
 }
 
-/* Accordion */
-.accordion {
-    width: 60%;
-    margin-top: 150px;
-    margin-bottom: 120px;
-    --bs-accordion-active-color: #ffffff;
-    --bs-accordion-active-bg: #0C40A3;
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 255, 255)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+/* Sorts & filters */
+
+.headerbox {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+   
 }
-/* Weather */
-#weather {
-    border: none;
+.btn-group{
+    margin-left: 15px;
 }
-.buy-btn{
-    width:150px;
-    height: 50px;
-    border-radius: 5px;
-    background: #C4D3F0;
-    border: none;
-    margin-top: 20px;
+.btn-outline-primary{
+    border: 2px solid #0c40a3;
+    border-radius: 8px;
     
+    --bs-btn-color: #0c40a3;
+    
+    --bs-btn-active-bg: #0c40a3;
+    --bs-btn-active-border-color: #0c40a3;
+    --bs-btn-border-color: #FFA86A;
 }
-footer{
-    height: 100px;
-    margin-top: 100px;
-    border-top: 1px solid #AAAAAA;
-    padding-top: 25px;
+.btn-outline-primary:hover {
+    --bs-btn-color: #FFA86A;
 }

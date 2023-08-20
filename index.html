@@ -57,7 +57,7 @@
           <div class="carousel-caption">
             <h1 style="font-size: 64px;">Horizon Cruises</h1>
             <h4>Experience Mediterranean Life</h4>
-            <button class="buy-btn mt-4">Book Now</button>
+            <a href="trips.html"><button class="buy-btn mt-4">Book Now</button></a>
           </div>
         </div>
 
@@ -126,67 +126,27 @@
     <!-- Weather Cards -->
   
     <div class="container">
-      <div class="row">
+      <div class="row" id="weatherContainer">
 
         <!-- Header -->
         <h3 class="ms-5 mb-5">Check the Weather Before You Go</h3>
 
-        <!-- Cards -->
-        <div class="col">
-          <div class="card text-center" id="weather">
-            <img src="assets/valetta.jpg" class="img-round mx-auto mt-3" alt="Valetta">
-            <div class="card-body">
-              <h3 class="card-title">Valetta</h3>
-              <p class="card-text">15°C  | 30°C</p>
-              <p class="card-text"><small class="text-body-secondary">Sunny</small></p>
-              <p class="card-text"><small class="text-body-secondary">Ran: 20%</small></p>
+        <template id="weatherTemplate">
+          
+          <!-- Cards -->
+          <div class="col">
+            <div class="card text-center" id="weather">
+              <img src="assets/valetta.jpg" class="img-round mx-auto mt-3" id="weatherImg" alt="Valetta">
+              <div class="card-body">
+                <h3 class="card-title" id="weatherCity">Valetta</h3>
+                <p class="card-text" id="minMaxTemp">15°C  | 30°C</p>
+                <p class="card-text" id="weatherState"><small class="text-body-secondary">Sunny</small></p>
+                <p class="card-text" id="humidity"><small class="text-body-secondary">Humidity: 20%</small></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center" id="weather">
-            <img src="assets/istanbul.jpg" class="img-round mx-auto mt-3" alt="Istanbul">
-            <div class="card-body">
-              <h3 class="card-title">Istanbul</h3>
-              <p class="card-text">15°C  | 25°C</p>
-              <p class="card-text"><small class="text-body-secondary">Rainy</small></p>
-              <p class="card-text"><small class="text-body-secondary">Ran: 90%</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center" id="weather">
-            <img src="assets/casablanca.jpg" class="img-round mx-auto mt-3" alt="Casablanca">
-            <div class="card-body">
-              <h3 class="card-title">Casablanca</h3>
-              <p class="card-text">16°C  | 38°C</p>
-              <p class="card-text"><small class="text-body-secondary">Cloudy</small></p>
-              <p class="card-text"><small class="text-body-secondary">Rain: 30%</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center" id="weather">
-            <img src="assets/mykonos.jpg" class="img-round mx-auto mt-3" alt="Mykonos">
-            <div class="card-body">
-              <h3 class="card-title">Mykonos</h3>
-              <p class="card-text">14°C  | 28°C</p>
-              <p class="card-text"><small class="text-body-secondary">Sunny</small></p>
-              <p class="card-text"><small class="text-body-secondary">Rain: 30%</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center" id="weather">
-            <img src="assets/valencia.jpg" class="img-round mx-auto mt-3" alt="Valencia">
-            <div class="card-body">
-              <h3 class="card-title">Valencia</h3>
-              <p class="card-text">21°C  | 31°C</p>
-              <p class="card-text"><small class="text-body-secondary">Cloudy</small></p>
-              <p class="card-text"><small class="text-body-secondary">Rain: 50%</small></p>
-            </div>
-          </div>
-        </div>
+        </template> 
+        
       </div>
     </div>
     

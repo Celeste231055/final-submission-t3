@@ -35,49 +35,110 @@
       </div>
         
     </nav>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- Sorting & Filtering -->
     
+    <div class="container">
+      <div class="row headerbox">
+        <div class="col-10">
+      
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            
+            <!-- All trips filter -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="allTrips" value="" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="allTrips">All destinations</label>
+          
+            <!-- Short Trips filter -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="shortTrips" value="short" autocomplete="off">
+            <label class="btn btn-outline-primary" for="shortTrips">Short trips</label>
+          
+            <!-- Long Trips filter -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="longTrip" value="long" autocomplete="off">
+            <label class="btn btn-outline-primary" for="longTrip">Long trips</label>
+    
+            <!-- Single Destination -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="singleTrip" value="single" autocomplete="off">
+            <label class="btn btn-outline-primary" for="singleTrip">Single destination</label>
+    
+            <!-- Multi Destination -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="multiTrip" value="multi" autocomplete="off">
+            <label class="btn btn-outline-primary" for="multiTrip">Multi destinations</label>
+    
+            <!-- Round Trip filter -->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="roundTrip" value="round trip" autocomplete="off">
+            <label class="btn btn-outline-primary" for="roundTrip">Round trip</label>
+    
+            <!-- Row Boat Special filter-->
+            <input type="radio" name="filterRadio" class="btn-check tripFilter" id="specialTrip" value="special offer" autocomplete="off">
+            <label class="btn btn-outline-primary" for="specialTrip">Row boat special</label>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="dropdown">
+            
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item tripSort" value="low to high" aria-selected="true">Price: low-high</a></li>
+              <li><a class="dropdown-item tripSort" value="high to low">Price: high-low</a></li>
+              <li><a class="dropdown-item tripSort" value="closest departure">Departure Date</a></li>
+              <li><a class="dropdown-item tripSort" value="a to z">A-Z</a></li>
+              <li><a class="dropdown-item tripSort" value="z to a">Z-A</a></li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    
+
+
     <!-- -------------------------------------------------------------------------------------------------- -->
     <!-- Trip Cards-->
-
     
-        <div id="tripContainer">
+    <div id="tripContainer">
             
-            <!-- Card Template -->
-            <template id="tripTemplate">
-                
-                <div class="card mx-auto mt-4 mb-4" id="trips" style="max-width: 75%;">
-                    <div class="row">
-                      <div class="col-3">
-                        <img src="assets/valetta.jpg" class="img-round m-3" alt="...">
-                      </div>
-            
-                      <div class="col-3">
-                        <div class="card-body">
-                          <h5 class="card-title pb-2" id="destinationText">Destination</h5>
-                          <p class="card-text" id="departureText">Departing From</p>
-                          <p class="card-text" id="returnText">Returning To</p>
-                        </div>
-                      </div>
-            
-                      <div class="col-3">
-                        <div class="card-body">
-                          <h5 class="card-title pb-2" id="durationText">Duration</h5>
-                          <p class="card-text" id="dateText">Date</p>
-                          <p class="card-text" id="codeText">Trip Code</p>
-                        </div>
-                      </div>
-            
-                      
-                      <div class="col-3 color-box">
-                        <div class="card-body">
-                          <h5 class="card-title" id="costText">Cost</h5>
-                          <button class="buy-btn">Buy Now</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </template>
+    </div>
+
+    <!-- Card Template -->
+    <template id="tripTemplate">
+          
+      <div class="card mx-auto mt-4 mb-4" id="trips" style="max-width: 75%;">
+        <div class="row">
+          <div class="col-3">
+            <img src="assets/valetta.jpg" class="img-round m-3" alt="...">
+          </div>
+
+          <div class="col-3">
+            <div class="card-body">
+              <h5 class="card-title pb-2" id="destinationText">Destination</h5>
+              <p class="card-text" id="departureText">Departing From</p>
+              <p class="card-text" id="returnText">Returning To</p>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card-body">
+              <h5 class="card-title pb-2" id="durationText">Duration</h5>
+              <p class="card-text" id="dateText">Date</p>
+              <p class="card-text" id="codeText">Trip Code</p>
+            </div>
+          </div>
+
+          
+          <div class="col-3 color-box">
+            <div class="card-body">
+              <h5 class="card-title" id="costText">Cost</h5>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
         </div>
+      </div>
+    </template>
     
     
 
