@@ -76,7 +76,7 @@ function loadWeather (){
     };
 };
 
-
+//Logo changes when hovered on
 $(".logoDefault").hover(function(){
     $(this).attr("src", '../assets/' + "horizon-logo-hover.jpg");
     },
@@ -84,6 +84,5 @@ $(".logoDefault").hover(function(){
     $(this).attr('src', '../assets/' +'horizon-logo-default.jpg'); 
     } 
 );
-    // -----------------------------------------------------------------------------------------------------------------------------
-
+   
 
