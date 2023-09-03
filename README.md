@@ -39,6 +39,13 @@
 ![Trip Items](screenshots/cart-view-popup.png)
 <br>
 
+## For an in depth view of the website's functionality watch the walkthrough video below:
+
+### [Walkthrough](https://www.loom.com/share/c17d709d8bed4d39ba86289b3f14b6f1?sid=3b338552-2a3d-46ce-a37d-0263319d0279)
+<br>
+
+---
+
 # **Getting Started**
 #### Login to your Github account and simply download the code or clone it to your local device.
 <br>
@@ -50,6 +57,7 @@
 * JSon
 * [Open Weather API](https://openweathermap.org/current)
 <br>
+
 
 # **Contributing**
 #### Currently, on the trips page, if the card is clicked the information gets pushed to an array, which is ultimately saved to locale storage. The code can be improved by pushing the information to the array only when the card is active. Otherwise, the information is pushed to the array whenever the card is clicked regardless if it is selected. And there is probably a better way of storing the information to locale storage. 
