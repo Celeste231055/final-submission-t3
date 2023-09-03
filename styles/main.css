@@ -28,6 +28,7 @@
     border-radius: 8px;
 }
 
+
 /* Footer */
 footer{
     height: 100px;
@@ -57,6 +58,7 @@ p{
     margin-top: 20px;
     background-color: #C4D3F0;
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .buy-btn:hover {
@@ -74,6 +76,12 @@ p{
 /* Carousel Spacing */
 .full-height {
     height: 90vh;
+}
+.carousel-indicators button {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 100%;
+    background-color: #ffffff !important;
 }
 
 /* Accordion */
@@ -96,12 +104,18 @@ p{
 /* Trips Page */
 
 /* Card Template */
-#trips {
+.trips {
     --bs-card-spacer-y: 2.5rem;
     background-color: #E3E8F4;
     border: none;
 }
-#trips:hover {
+.trips:hover {
+    background-color: #ffd5b7;
+}
+.activeTrip {
+    background-color: #FFA86A;
+}
+.activeTrip:hover {
     background-color: #FFA86A;
 }
 .color-box {
@@ -119,7 +133,13 @@ p{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+.clicked {
+    background-color: #FFA86A;
+    font-weight: bold;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    border: 4px solid #FFA86A;
+    
+}
 /* Sorts & filters */
 
 .headerbox {
@@ -144,4 +164,40 @@ p{
 }
 .btn-outline-primary:hover {
     --bs-btn-color: #FFA86A;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Checkout Page */
+
+/* Table */
+.table{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: -40px;
+    text-indent: 70px;
+    --bs-table-hover-bg: #FFA86A;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    
+}
+.minus{
+    width: 30px;
+    margin-left: 15px;
+}
+
+.table tr, th{
+    background-color: #0c40a3 !important; 
+    color:white !important;
+    height: 70px;
+    vertical-align: middle;
+} 
+.page-title {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.checkout-btn{
+    margin-left: 80%;
+   
 }
