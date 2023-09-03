@@ -41,7 +41,7 @@
 
 ## For an in depth view of the website's functionality watch the walkthrough video below:
 
-### [Walkthrough](https://www.loom.com/share/c17d709d8bed4d39ba86289b3f14b6f1?sid=3b338552-2a3d-46ce-a37d-0263319d0279)
+### [Walkthrough](https://www.loom.com/share/c230a61bbb154b07bff72805a9d50b79?sid=7cae9f34-d5d9-45c5-8ab6-312678e7294c)
 <br>
 
 ---
